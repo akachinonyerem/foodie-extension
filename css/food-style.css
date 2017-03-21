@@ -71,14 +71,17 @@ a {
 
 .food-images-wrapper {
 		/*border: 1px solid black;*/
-		display: inline-block;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		padding: 15px;
-		/*margin: 20px;*/
+		/*margin-bottom:20px;*/
 }
 
 .food-images {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-	float: left;
+	/*float: left;*/
 	width: 250px;
 	background-color: #fff;
 	border-radius: 4px;
@@ -107,9 +110,10 @@ a {
 
 
 .footnote {
+	/*font-size: 0.8125rem;*/
 	font-size: 0.8125rem;
-	display: inline-block;
-	float: left;
+	/*display: inline-block;*/
+	/*float: left;*/
 	margin-left: 100px;
 	font-style: bold;
 	color: #333333;
@@ -118,8 +122,12 @@ a {
 .footnote-wrapper {
 		/*border: 1px solid black;*/
 
-		display: inline-block;
-		margin:  50px 200px 0px 200px;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		/*margin:  50px 200px 0px 200px;*/
+		margin-top: 50px;
 }
 
 #NB {
